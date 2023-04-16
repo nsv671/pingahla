@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+:root {
+  --primery-color: #0676da;
+  --secondary-color: #3aa8de;
+  --background-color: #5e90e3;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  /* background-color: var(--background-color); */
+  background-color: #65a4e6;
+}
+
+nav {
+  max-height: 20vh;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.6rem 8.6rem;
+}
+
+.logo a img {
+  height: 8vh;
+  margin-left: -2.4rem;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-left: 1.8rem;
+}
+
+nav ul li a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Hero section */
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  margin: 0 8.6rem;
+  max-height: 80vh;
+  margin-bottom: 3vh;
+}
+
+.hero-section p {
+  font-size: 4.8rem;
+}
+
+.hero-section-content,
+.hero-section-img {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-section-img img {
+  height: 80%;
+  width: 80%;
+  margin-top: 5.6rem;
+}
+
+.hero-section-img .cloud {
+  position: absolute;
+  left: 25%;
+  top: 9.5%;
+  height: 59.5%;
+  width: 50.5%;
+}
