@@ -21,16 +21,20 @@ body {
 }
 
 nav {
-  max-height: 20vh;
-  height: 10vh;
+  height: 8rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2.6rem 8.6rem;
+  padding: 2.6rem 8.6rem;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  padding: 1rem 0;
 }
 
 .logo a img {
-  height: 8vh;
+  height: 5.4rem;
   margin-left: -2.4rem;
 }
 
@@ -54,19 +58,31 @@ nav ul li a {
 .hero-section {
   display: flex;
   align-items: center;
-  margin: 0 8.6rem;
-  max-height: 80vh;
-  margin-bottom: 3vh;
+  margin: 6rem 8.6rem;
+  height: 64remrem;
+}
+
+.hero-content-container {
+  width: 50%;
+  height: 100%;
 }
 
 .hero-section p {
   font-size: 4.8rem;
 }
 
+.hero-img-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-section-content,
 .hero-section-img {
   height: 100%;
-  width: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,15 +90,14 @@ nav ul li a {
 }
 
 .hero-section-img img {
-  height: 80%;
-  width: 80%;
-  margin-top: 5.6rem;
+  height: 56rem;
+  max-width: 100%;
 }
 
 .hero-section-img .cloud {
   position: absolute;
   left: 25%;
   top: 9.5%;
-  height: 59.5%;
+  height: 59%;
   width: 50.5%;
 }
