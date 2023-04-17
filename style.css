@@ -124,6 +124,7 @@ nav ul li a {
 
 .subsection-content h2 {
   font-size: 8.6rem;
+  color: #bfd3f4;
   margin: 0 3.2rem 1.2rem;
   width: 11rem;
   border-radius: 1.6rem;
@@ -131,11 +132,13 @@ nav ul li a {
 }
 .subsection-content h3 {
   font-size: 4.8rem;
+  color: #dfe9f9;
   margin: 0 3.2rem 1.2rem;
   text-transform: uppercase;
 }
 .subsection-content p {
   font-size: 2.2rem;
+  color: #fff;
   margin: 0 3.2rem 1.2rem;
 }
 
@@ -148,4 +151,49 @@ nav ul li a {
 .subsection-image img {
   height: 42rem;
   width: 56rem;
+  opacity: 70%;
+}
+
+/* About section */
+.about {
+  padding: 0 8.6rem;
+  margin: 3.6rem 0;
+}
+
+.about h2 {
+  font-size: 6.4rem;
+  color: #dfe9f9;
+}
+
+.about-subcontainer {
+  display: flex;
+  width: 100%;
+  margin: 3.6rem 0;
+}
+
+.about-subcontainer-image {
+  flex: 50%;
+  height: 100%;
+}
+
+.about-subcontainer-image img {
+  height: 48rem;
+  width: 100%;
+  opacity: 80%;
+}
+
+.about-subcontainer-content {
+  flex: 50%;
+  padding: 2.4rem;
+}
+
+.about-subcontainer-content h3 {
+  font-size: 4.8rem;
+  color: #eff4fc;
+  text-transform: uppercase;
+  margin: 2.4rem 0;
+}
+.about-subcontainer-content p {
+  font-size: 2.4rem;
+  margin: 2.4rem 0;
 }
