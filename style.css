@@ -11,6 +11,10 @@
   --background-color: #65a4e6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   color: #fff;
