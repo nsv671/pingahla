@@ -53,7 +53,9 @@ nav ul li a {
   color: #fff;
 }
 
+/****************/
 /* Hero section */
+/****************/
 
 .hero-section {
   display: flex;
@@ -151,10 +153,13 @@ nav ul li a {
 .subsection-image img {
   height: 42rem;
   width: 56rem;
-  opacity: 70%;
+  opacity: 90%;
 }
 
+/*****************/
 /* About section */
+/*****************/
+
 .about {
   padding: 0 8.6rem;
   margin: 3.6rem 0;
@@ -163,6 +168,7 @@ nav ul li a {
 .about h2 {
   font-size: 6.4rem;
   color: #dfe9f9;
+  margin-left: 2.4rem;
 }
 
 .about-subcontainer {
@@ -172,14 +178,17 @@ nav ul li a {
 }
 
 .about-subcontainer-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex: 50%;
   height: 100%;
 }
 
 .about-subcontainer-image img {
   height: 48rem;
-  width: 100%;
-  opacity: 80%;
+  width: 90%;
+  opacity: 90%;
 }
 
 .about-subcontainer-content {
@@ -196,4 +205,214 @@ nav ul li a {
 .about-subcontainer-content p {
   font-size: 2.4rem;
   margin: 2.4rem 0;
+}
+
+/**************/
+/* Our Client */
+/**************/
+/* 
+.client-section {
+  padding: 0 8.6rem;
+  margin: 4.2rem 0;
+}
+
+.client-section h2 {
+  font-size: 6.4rem;
+  color: #fff;
+  text-align: center;
+}
+
+.client-subsection .client-subsection-content {
+  position: absolute;
+}
+
+.client-subsection .client-subsection-content img {
+  height: 32rem;
+  width: 32rem;
+}
+
+.client-subsection-content div {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  border: 4px solid #fff;
+}
+
+.client-subsection-content div p {
+  margin: 8rem auto;
+  font-size: 3.2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.client-subsection div p strong {
+  font-size: 6.4rem;
+}
+
+.background-hover-effect {
+  display: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  height: 40%;
+  width: 40%;
+  transition: all 0.3s ease;
+}
+
+.background-hover-effect img {
+  height: 6.8rem !important;
+  width: 18rem !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5.2rem;
+}
+
+.background-hover-effect p {
+  font-size: 1.2rem !important;
+  margin: 1.6rem 1rem !important;
+}
+
+.client-subsection-content:hover .background-hover-effect {
+  transform: scale(1.25);
+  z-index: 1;
+  border-color: #333;
+  background-color: #777;
+  display: block;
+} */
+
+/* ******************************************* */
+.client {
+  padding: 0 8.6rem;
+  margin: 4.2rem 0;
+}
+
+.client-subsection-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-row-gap: 3.6rem;
+  grid-column-gap: 3.6rem;
+}
+
+.relative {
+  position: relative;
+  grid-column: span 2;
+}
+
+.relative:last-child:nth-child(n - 1) {
+  grid-column-end: -2;
+}
+
+.relative:nth-last-child(2):nth-child(n + 1) {
+  grid-column-end: 4;
+}
+
+.relative img {
+  display: block;
+  width: 100%;
+  height: 48rem;
+  cursor: pointer;
+}
+
+.client-subsection-content {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  height: 90%;
+  width: 90%;
+  border: 2px solid #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-subsection-content p {
+  font-size: 2.4rem;
+  color: #fff;
+}
+
+.client-subsection-content p strong {
+  font-size: 4.8rem;
+}
+
+.client-subsection-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: 0%; */
+  width: 60%;
+  height: 40%;
+}
+
+.background-hover-effect {
+  visibility: hidden;
+  z-index: -1;
+  padding: 3.6rem;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  height: 80%;
+  width: 80%;
+  border: 4px solid #333;
+  transition: all 0.3s ease;
+}
+
+.background-hover-effect img {
+  height: 8.4rem !important;
+  width: 22rem !important;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15%;
+}
+
+.background-hover-effect p {
+  font-size: 1.4rem !important;
+  margin: 1.6rem 1rem !important;
+  line-height: 1.8;
+}
+
+.relative:hover .background-hover-effect {
+  transform: scale(1.25);
+  z-index: 1;
+  visibility: visible;
+}
+
+/* individual background color */
+
+.rds {
+  background-color: #777;
+}
+
+.vita-coco {
+  background-color: #01964a;
+}
+
+.us-gov-agency {
+  background-color: #004890;
+}
+
+.cloudx {
+  background-color: #000;
+  border-color: #fff;
+}
+
+.allied {
+  background-color: #0071b9;
+}
+
+.david {
+  background-color: #000;
+  border-color: #fff;
+}
+
+.healthyfirst {
+  background-color: #377e38;
+}
+
+.moka {
+  background-color: #7f6518;
 }
