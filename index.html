@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="https://www.google.com/recaptcha/api.js"></script>
     <title>Pingahla</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
           <li><a href="#our-services">Our Service</a></li>
           <li><a href="#about-us">About Us</a></li>
           <li><a href="#customers">Customers</a></li>
-          <li><a href="">Contacts</a></li>
+          <li><a href="#contacts">Contacts</a></li>
           <li><a href="https://www.pingahla.com/blog-1">Blog</a></li>
         </ul>
       </div>
@@ -245,5 +246,76 @@
         </div>
       </div>
     </div>
+
+    <div class="contacts" id="contacts">
+      <h2>Get in touch with Pingahla</h2>
+      <a href="mailto:info@pingahla.com"><p>info@pingahla.com</p></a>
+      <a href="tel:1-888-429-0150"><p>1-888-429-0150</p></a>
+      <form id="form" class="form">
+        <input type="text" placeholder="First name" />
+        <input type="text" placeholder="last name" />
+        <input type="email" placeholder="Enter your email" />
+        <input type="tel" placeholder="Enter your phone number" />
+        <input type="text" placeholder="company" class="company" />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="products details"
+          class="product-details"
+        ></textarea>
+        <button
+          class="g-recaptcha"
+          data-sitekey="6LcH6aQlAAAAAMGYPymniULJ2MXuQV940c0GbzCF"
+          data-callback="onSubmit"
+          data-action="submit"
+        >
+          Submit
+        </button>
+      </form>
+
+      <div class="address-container">
+        <div class="adress">
+          <div class="detail-address">
+            <img src="./img/logo/location-outline.svg" alt="location svg" />
+            <h2>New York City, NY (Headquarters)</h2>
+          </div>
+          <p>
+            57 West 57th Street <br />4th Floor <br />
+            New York, NY, 10019
+          </p>
+        </div>
+
+        <div class="adress">
+          <div class="detail-address">
+            <img src="./img/logo/location-outline.svg" alt="location svg" />
+            <h2>Pune, India</h2>
+          </div>
+          <p>
+            Office No-03B, ground floor, "B" wing, <br />
+            Midas Tower, Hinjewadi, Phase- 1 <br />
+            Pune Maharashtra-411057
+          </p>
+        </div>
+
+        <div class="adress">
+          <div class="detail-address">
+            <img src="./img/logo/location-outline.svg" alt="location svg" />
+            <h2>Bogotá, Colombia</h2>
+          </div>
+          <p>
+            Carrera 11 No. 79 - 66 <br />
+            Room 129 <br />BOGOTÁ, D.C. <br />
+            110221 <br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function onSubmit(token) {
+        document.getElementById('form').submit();
+      }
+    </script>
   </body>
 </html>
